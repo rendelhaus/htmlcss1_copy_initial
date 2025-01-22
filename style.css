@@ -1,0 +1,93 @@
+:root{
+    --primary-color: #7c3aed;
+    --background-color: #f5f5f5;
+    --card-background: #ffffff;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --input-background: #f9fafb;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+.login-container{
+    width: 100%;
+    max-width: 440px;
+    padding: 1.5rem;
+}
+
+.login-card{
+    background-color: var(--card-background);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.brand{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.brand h1{
+   font-size: 1.875rem;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+}
+
+.brand p{
+    color: var(--text-secondary);
+}
+
+.form-group{
+    margin-bottom: 1.5rem;
+}
+
+
+label{
+    display: block;
+    font-size: 0.875rem;
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+
+input[type="email"] ,
+input[type="password"]{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--input-background);
+    font-size: 0.875rem;
+}
+
+input:focus{
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.login-button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.login-button:hover{
+    background-color: var(--primary-color);
+}
