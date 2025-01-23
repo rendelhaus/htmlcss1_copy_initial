@@ -91,3 +91,46 @@ input:focus{
 .login-button:hover{
     background-color: var(--primary-color);
 }
+
+.divider{
+    text-align: center;  
+}
+.divider p{
+    padding-top: 0.75rem;
+    font-size: 0.900rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+.google-button, .apple-button {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--card-background);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-align: center;
+    cursor: pointer;
+}
+.google-button:hover, .apple-button:hover {
+    border-color: var(--primary-color);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+.signup-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
